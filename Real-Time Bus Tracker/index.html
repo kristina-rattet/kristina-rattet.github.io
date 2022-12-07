@@ -17,28 +17,31 @@
             Click to see the sequence of stops on the bus route between MIT and Harvard
         </button>
     </div>
-    <script src="./mapanimation.js"></script>
+    
+    <script src="./mapanimation.js">
+
+const geojson = {
+  type: 'FeatureCollection',
+  features: [
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-71.093729, 42.359244]
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'Stop 1'
+      }
+    }
+  ]
+};
+
+    </script>
 
     <div id='map_geo' class='map'></div>
 
 <div id='map_simple' class='map'></div>
-
-<script>
-const geojson = [
-  {
-    type: 'Feature',
-    geometry: {
-      type: 'Point',
-      coordinates: [-71.093729, 42.359244]
-    },
-    properties: {
-      'marker-color': '#3bb2d0',
-      'marker-size': 'large',
-      'marker-symbol': 'rocket'
-    }
-  }
-];
-</script>
 
 
 </body>

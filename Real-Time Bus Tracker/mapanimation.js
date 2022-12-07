@@ -30,6 +30,10 @@ const busStops = [
           .setLngLat(busStops[0])
           .addTo(map);
 
+  // attempting to add stagnant points to denote geo location of each bus stop
+
+  
+
   // counter here represents the index of the current bus stop
   let counter = 0;
   function move() {
