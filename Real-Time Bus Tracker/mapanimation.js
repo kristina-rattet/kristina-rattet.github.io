@@ -17,6 +17,7 @@ const busStops = [
   // TODO: add your own access token
   mapboxgl.accessToken = 'pk.eyJ1Ijoia3Jpc2NhbGdpcmwyOSIsImEiOiJjbGJjcG45eTMwNXllM29wMzF2a2R6NjZmIn0.wKbeM8On5dmMwSTrC9ZdBw';
   
+  
   // This is the map instance
   let map = new mapboxgl.Map({
     container: 'map',
@@ -25,14 +26,15 @@ const busStops = [
     zoom: 14,
   });
   
+  // attempting to add stagnant points to denote geo location of each bus stop
+  var stagnantMarker = new mapboxgl.Marker()
+  .setLngLat(busStops)
+  .addTo(map);
+
   // TODO: add a marker to the map at the first coordinates in the array busStops. The marker variable should be named "marker"
   var marker = new mapboxgl.Marker()
           .setLngLat(busStops[0])
           .addTo(map);
-
-  // attempting to add stagnant points to denote geo location of each bus stop
-
-  
 
   // counter here represents the index of the current bus stop
   let counter = 0;
