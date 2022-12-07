@@ -4,7 +4,7 @@
 <h1>Real Time Bus Tracking</h1>
 
 <h2>PROJECT DESCRIPTION</h2>
-<p>In this project, I showcase my use of <i><b>Mapbox</b></i>, along with <i><b>JavaScript</i></b>, as a tool to view real time mapping data for stops along a bus route between MIT and Harvard in Boston, Massachusetts.</p>
+<p>In this project, I showcase my use of <i><b>GeoJSON</b></i>, <i><b>Mapbox</b></i>, along with <i><b>JavaScript</i></b>, as a tool to view real time mapping data for stops along a bus route between MIT and Harvard in Boston, Massachusetts.</p>
 
 <h2>HOW TO RUN THIS PROGRAM</h2>
 <ul>
