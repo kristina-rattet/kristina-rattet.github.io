@@ -26,10 +26,11 @@ const busStops = [
     zoom: 14,
   });
   
-  // attempting to add stagnant points to denote geo location of each bus stop
+  /* attempting to add stagnant points to denote geo location of each bus stop
   var stagnantMarker = new mapboxgl.Marker()
   .setLngLat(busStops)
   .addTo(map);
+  */
 
   // TODO: add a marker to the map at the first coordinates in the array busStops. The marker variable should be named "marker"
   var marker = new mapboxgl.Marker()
