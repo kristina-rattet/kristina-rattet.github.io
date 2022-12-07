@@ -38,12 +38,6 @@ const geojson = [
     }
   }
 ];
-
-const mapSimple = L.mapbox.map('map_simple')
-  .setView([37.8, -96], 4)
-  .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v11'));
-const myLayer = L.mapbox.featureLayer().setGeoJSON(geojson).addTo(mapSimple);
-mapSimple.scrollWheelZoom.disable();
 </script>
 
 
