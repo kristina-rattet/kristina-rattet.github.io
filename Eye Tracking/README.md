@@ -1,4 +1,4 @@
-# kristina-rattet.github.io
+# INTERACTIVE EYE TRACKER
 
 <!DOCTYPE html>
 
