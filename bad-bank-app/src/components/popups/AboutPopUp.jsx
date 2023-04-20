@@ -52,7 +52,7 @@ const AboutPopUp = ({ handleClose }) => {
                       </div>
                     </p>
                     <h5>
-                      Kristina Rattet <h6>MITx Pro Professional Certificate in Coding for Woment, <br></br>Anticipated completion date of July 2023</h6>
+                      Kristina Rattet <h6>MITx Pro Professional Certificate in Coding for Women, <br></br>Anticipated completion date of July 2023</h6>
                     </h5>
 
                     <h6>

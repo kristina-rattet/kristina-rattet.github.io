@@ -31,7 +31,7 @@ const Transactions = () => {
   return (
     <>
       {!loggedInUser ? (
-        <p>Please login to your account</p>
+        <p>You must be logged in to your account to access this page</p>
       ) : (
         <TableContainer component={Paper} className="custom-table">
           <Table sx={{ minWidth: 500 }} aria-label="simple table">
@@ -46,7 +46,7 @@ const Transactions = () => {
               <>
                 <TableBody>
                   <TableRow>
-                    <TableCell>No Transactions to show</TableCell>
+                    <TableCell>No transactions to show at this time</TableCell>
                   </TableRow>
                 </TableBody>
               </>

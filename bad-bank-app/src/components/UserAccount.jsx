@@ -46,7 +46,7 @@ const UserAccount = () => {
       </div>
       <div className="report-container">
         <div>
-          <h5>Transactions</h5>
+          <h5>Transaction History</h5>
           <Transactions />
         </div>
 

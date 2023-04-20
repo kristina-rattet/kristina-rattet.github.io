@@ -48,7 +48,7 @@ const Navbar = () => {
                 <>
                   <li className="nav-item">
                     <Link to="/myAccount" className="nav-link">
-                      My Account
+                      My Transactions
                     </Link>
                   </li>
                   <li className="nav-item">
