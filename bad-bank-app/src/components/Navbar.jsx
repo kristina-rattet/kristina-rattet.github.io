@@ -90,6 +90,21 @@ const Navbar = () => {
                       Login
                     </span>
                   </li>
+                  <li className="nav-item">
+                <Link to="/deposit" className="nav-link">
+                  Deposit
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/withdraw" className="nav-link">
+                  Withdraw
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/allData" className="nav-link">
+                  Confidential Data
+                </Link>
+              </li>
                 </>
               )}
             </ul>
