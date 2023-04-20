@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Bad Bank - MIT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## App Information
 
-## Available Scripts
+### Title: Bad Bank Application
 
-In the project directory, you can run:
+### Description:
 
-### `npm start`
+Bad Bank is the Capstone Project for Module 2 in the MIT - Fullstack Development with MERN. It is called Bad Bank due to the users data exposured in the UI (intentionally).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It consists of a simple React application where the students apply concepts such as hooks, context, routing, and form validations. As well, for the first attempt from the students to deploy a React application using AWS S3 Buckets.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### How to Run
 
-### `npm test`
+Simply download the zip folder with the source code file, or fork it into your github and clone it into your machine, and run it by using your favorite IDE.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies and libraries used:
 
-### `npm run build`
+- React JS
+- Formik
+- Yup Schema Validation
+- React Toastify
+- Material UI
+- Bootstrap
+- ChartJS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Functionalities available:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Create Account
+- Login to Account
+- Edit Account
+- Transactions List
+- Deposit
+- Withdraw
+- Totals Charts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Link to AWS Deployment: **[Bad Bank](http://kevin-grimaldibankingapplication.s3-website-us-east-1.amazonaws.com/)**
 
-### `npm run eject`
+### Future Adds
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Implement Backend
+- Allow users to upload their own avatar
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Kevin Grimaldi.
+Student at MIT - Fullstack Development with MERN
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License
