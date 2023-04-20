@@ -21,19 +21,19 @@ const RegisterPopUp = ({ handleClose }) => {
 
   //Registration validation schema using yup
   const validationSchema = yup.object({
-    name: yup.string().required("Name is required"),
+    name: yup.string().required("A user name is required"),
     email: yup
       .string()
-      .email("Enter a valid email address")
+      .email("Please enter a valid email address")
       .required("Email is required"),
     password: yup
       .string()
-      .min(8, "Password should be at least 8 characters long")
-      .required("Password is required"),
+      .min(8, "Your password should be at least 8 characters long")
+      .required("A password is required"),
     confirmPassword: yup
       .string()
       .required("Please confirm your password")
-      .oneOf([ref("password")], "Passwords do not match"),
+      .oneOf([ref("password")], "The entered passwords do not match"),
   });
 
   const formik = useFormik({
@@ -53,7 +53,7 @@ const RegisterPopUp = ({ handleClose }) => {
       );
 
       if (isDuplicate) {
-        toast.error("Email already in use");
+        toast.error("This email has already been registered");
         return;
       }
 
@@ -69,7 +69,7 @@ const RegisterPopUp = ({ handleClose }) => {
       setUser((prev) => [...prev, persona]);
       formik.resetForm();
       setOtherAccount((prev) => !prev);
-      toast.success("Successful user registration");
+      toast.success("Your account has been successfully created");
       return;
     },
   });
@@ -110,7 +110,7 @@ const RegisterPopUp = ({ handleClose }) => {
           {otherAccount ? (
             <div className="card">
               <div className="card-body">
-                <p>Would you like to add another account?</p>
+                <p>Would you like to create another account?</p>
                 <Box m={2} className="custom-btn-group">
                   <Button
                     variant="contained"
@@ -134,7 +134,7 @@ const RegisterPopUp = ({ handleClose }) => {
           ) : (
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">Register</h5>
+                <h5 className="card-title">Create Account</h5>
                 <hr />
                 <div>
                   <Box m={2}>
@@ -153,17 +153,17 @@ const RegisterPopUp = ({ handleClose }) => {
                       >
                         <MenuItem value="/images/Avatar0.png">Default</MenuItem>
                         <MenuItem value="/images/Avatar1.png">
-                          Female 1
+                          Avatar 1
                         </MenuItem>
-                        <MenuItem value="/images/Avatar5.png">
-                          Female 2
+                        <MenuItem value="/images/Avatar2.png">
+                          Avatar 2
                         </MenuItem>
-                        <MenuItem value="/images/Avatar6.png">
-                          Female 3
+                        <MenuItem value="/images/Avatar3.png">
+                          Avatar 3
                         </MenuItem>
-                        <MenuItem value="/images/Avatar2.png">Male 1</MenuItem>
-                        <MenuItem value="/images/Avatar4.png">Male 2</MenuItem>
-                        <MenuItem value="/images/Avatar3.png">Male 3</MenuItem>
+                        <MenuItem value="/images/Avatar4.png">Avatar 4</MenuItem>
+                        <MenuItem value="/images/Avatar5.png">Avatar 5</MenuItem>
+                        <MenuItem value="/images/Avatar6.png">Avatar 6</MenuItem>
                       </Select>
                     </FormControl>
                   </Box>

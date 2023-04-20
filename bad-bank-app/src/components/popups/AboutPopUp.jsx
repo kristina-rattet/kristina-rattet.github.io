@@ -7,29 +7,26 @@ const AboutPopUp = ({ handleClose }) => {
         <div className="box">
           <div className="card">
             <div className="card-body">
-              <span className="">About Bad Bank</span>
+              <span className="">About Us</span>
               <hr />
               <div>
                 <Box m={2} className="custom-btn-group">
                   <div>
-                    <h2>What is Bad Bank?</h2>
+                    <h2>Bad Bank demonstrates how good a developer can be at bad design.</h2>
                     <p>
-                      Bad Bank is the Capstone Project for Module 2 in the{" "}
-                      <a href="https://executive-ed.xpro.mit.edu/professional-certificate-coding?utm_source=Google&utm_network=g&utm_medium=c&utm_term=mit%20full%20stack%20developer&utm_location=9011929&utm_campaign_id=17059210457&utm_adset_id=135511781189&utm_ad_id=594862351424">
-                        MIT - Fullstack Development with MERN
+                      Bad Bank project serves as the second independent project for {" "}
+                      <a href="https://executive-ed.xpro.mit.edu/professional-certificate-coding-womens-cohort">
+                      Professional Certificate in Coding - For Women
                       </a>
-                      . It is called Bad Bank due to the users data exposured in
-                      the UI (intentionally).
+                      and demonstrates the combined skillsets learned in Module 1 & 2 of the program. The name "Bad Bank" is applicable due to the intentional exposure of critically confidential customer data.
                       <br /> <br />
-                      It consists of a simple React application where the
-                      students apply concepts such as hooks, context, routing,
-                      and form validations. As well, for the first attempt from
-                      the students to deploy a React application using AWS S3
+                      This website consists of a simple React application where concepts such as hooks, context, routing,
+                      and form validations are applied. In addition, we demonstrate the ability to produce a static website through the deployment of our React application using AWS S3
                       Buckets.
                       <br /> <br />
                       <div className="features">
                         <div>
-                          List of technologies and libraries used:
+                          The following technologies and libraries are used:
                           <ul>
                             <li>React JS</li>
                             <li>Formik</li>
@@ -41,7 +38,7 @@ const AboutPopUp = ({ handleClose }) => {
                           </ul>
                         </div>
                         <div>
-                          Functionalities available:
+                          The following functionalities are available:
                           <ul>
                             <li>Create Account</li>
                             <li>Login to Account</li>
@@ -55,7 +52,7 @@ const AboutPopUp = ({ handleClose }) => {
                       </div>
                     </p>
                     <h5>
-                      Kevin Grimaldi <h6>MIT Student</h6>
+                      Kristina Rattet <h6>MITx Pro Professional Certificate in Coding for Woment, <br></br>Anticipated completion date of July 2023</h6>
                     </h5>
 
                     <h6>

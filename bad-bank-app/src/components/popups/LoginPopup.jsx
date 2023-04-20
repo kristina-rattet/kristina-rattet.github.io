@@ -13,8 +13,8 @@ const LoginPopUp = ({ handleClose }) => {
 
   //Validation schema
   const validationSchema = yup.object({
-    email: yup.string().required("Email is required"),
-    password: yup.string().required("Password is required"),
+    email: yup.string().required("An email is required"),
+    password: yup.string().required("A password is required"),
   });
 
   const formik = useFormik({
@@ -37,7 +37,7 @@ const LoginPopUp = ({ handleClose }) => {
 
       //Validate password
       if (targetUser.password !== formik.values.password) {
-        toast.warn("Invalid credentials");
+        toast.warn("Credentials are Invalid");
         return;
       }
 
@@ -46,7 +46,7 @@ const LoginPopUp = ({ handleClose }) => {
       formik.resetForm();
       handleClose();
       navigate("/myAccount");
-      toast.success(`Welcome, ${targetUser.name}!`);
+      toast.success(`Hello, ${targetUser.name}!`);
       return;
     },
   });
@@ -113,7 +113,7 @@ const LoginPopUp = ({ handleClose }) => {
                     type="submit"
                     onClick={handleClose}
                   >
-                    Cancel
+                    Close
                   </Button>
 
                   <Button

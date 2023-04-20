@@ -1,6 +1,8 @@
 body {
-  background-image: url("../public/images/background2.jpg");
-  background-size: cover;
+  background-image: url("../public/images/background.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
   color: #253237;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -23,9 +25,9 @@ code {
 .card-container {
   text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: left;
+  align-items: left;
+  justify-content: left;
   gap: 15px;
 }
 
