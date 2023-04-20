@@ -29,7 +29,7 @@ const AllData = () => {
 
   return (
     <>
-      <h1>AllData</h1>
+      <h1>Customer Account Info</h1>
       <br />
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">

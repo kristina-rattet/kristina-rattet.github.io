@@ -31,13 +31,13 @@ const LoginPopUp = ({ handleClose }) => {
       );
 
       if (!targetUser) {
-        toast.error("User does not exist");
+        toast.error("No account is found for this email address");
         return;
       }
 
       //Validate password
       if (targetUser.password !== formik.values.password) {
-        toast.warn("Credentials are Invalid");
+        toast.warn("Your entered password is incorrect");
         return;
       }
 

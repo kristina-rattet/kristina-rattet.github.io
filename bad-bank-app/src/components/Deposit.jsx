@@ -15,8 +15,8 @@ const Deposit = () => {
   const validationSchema = yup.object({
     depositAmount: yup
       .number()
-      .min(1, "Must be greater or equal than $1")
-      .required("Deposit Amount is required")
+      .min(1, "Your dollar value must be greater than or equal to 1")
+      .required("A deposit amount is required")
       .typeError("The deposit amount must be a number"),
   });
 
@@ -30,7 +30,7 @@ const Deposit = () => {
     onSubmit: () => {
       //Verify if there's logged in user
       if (!loggedInUser) {
-        toast.error("Please login to make a successful transaction");
+        toast.error("You must be logged in to complete a transaction");
         return;
       }
 
@@ -50,7 +50,7 @@ const Deposit = () => {
       setUser(newData);
       setLoggedInUser((prev) => ({ ...prev, balance: newBalance }));
       formik.resetForm();
-      toast.success("Deposit successful");
+      toast.success("Your deposit was successful");
       return;
     },
   });
@@ -81,8 +81,8 @@ const Deposit = () => {
     <>
       {!loggedInUser ? (
         <>
-          <h3>Deposit</h3>
-          <p>Please login to your account</p>
+          <h3>Make a Deposit</h3>
+          <p>You must be logged in to access your account</p>
         </>
       ) : (
         <div className="card" style={customStyles}>
@@ -117,7 +117,7 @@ const Deposit = () => {
                   onClick={formik.handleSubmit}
                   disabled={isDisabled}
                 >
-                  Deposit
+                  Deposit Now
                 </Button>
               </Box>
             </div>

@@ -17,19 +17,19 @@ const UpdateProfilePopUp = ({ handleClose }) => {
 
   //Registration validation schema using yup
   const validationSchema = yup.object({
-    name: yup.string().required("Name is required"),
+    name: yup.string().required("A name is required"),
     email: yup
       .string()
-      .email("Enter a valid email address")
-      .required("Email is required"),
+      .email("Please enter a valid email address")
+      .required("An email is required"),
     password: yup
       .string()
-      .min(8, "Password should be at least 8 characters long")
-      .required("Password is required"),
+      .min(8, "Your password should be at least 8 characters long")
+      .required("A password is required"),
     confirmPassword: yup
       .string()
       .required("Please confirm your password")
-      .oneOf([ref("password")], "Passwords do not match"),
+      .oneOf([ref("password")], "The entered passwords do not match"),
   });
 
   const formik = useFormik({
@@ -50,7 +50,7 @@ const UpdateProfilePopUp = ({ handleClose }) => {
         );
 
         if (isDuplicate) {
-          toast.error("Email already in use");
+          toast.error("This email is already registered");
           return;
         }
       }
@@ -77,7 +77,7 @@ const UpdateProfilePopUp = ({ handleClose }) => {
 
       formik.resetForm();
       handleClose();
-      toast.success("Profile Updated!");
+      toast.success("Your profile has been updated.");
       return;
     },
   });
@@ -92,7 +92,7 @@ const UpdateProfilePopUp = ({ handleClose }) => {
         <div className="box">
           <div className="card">
             <div className="card-body">
-              <span className="">Update User Profile</span>
+              <span className="">Update Your User Profile</span>
               <hr />
               <div>
                 <Box m={2}>
@@ -100,7 +100,7 @@ const UpdateProfilePopUp = ({ handleClose }) => {
                 </Box>
                 <Box m={2}>
                   <FormControl className="custom-input-box">
-                    <InputLabel id="userPicLabel">Avatar</InputLabel>
+                    <InputLabel id="userPicLabel">Choose Your Avatar</InputLabel>
                     <Select
                       labelId="userPicLabel"
                       id="userPic"
@@ -110,12 +110,12 @@ const UpdateProfilePopUp = ({ handleClose }) => {
                       label="Avatar"
                     >
                       <MenuItem value="/images/Avatar0.png">Default</MenuItem>
-                      <MenuItem value="/images/Avatar1.png">Female 1</MenuItem>
-                      <MenuItem value="/images/Avatar5.png">Female 2</MenuItem>
-                      <MenuItem value="/images/Avatar6.png">Female 3</MenuItem>
-                      <MenuItem value="/images/Avatar2.png">Male 1</MenuItem>
-                      <MenuItem value="/images/Avatar4.png">Male 2</MenuItem>
-                      <MenuItem value="/images/Avatar3.png">Male 3</MenuItem>
+                      <MenuItem value="/images/Avatar1.png">Avatar 1</MenuItem>
+                      <MenuItem value="/images/Avatar2.png">Avatar 2</MenuItem>
+                      <MenuItem value="/images/Avatar3.png">Avatar 3</MenuItem>
+                      <MenuItem value="/images/Avatar4.png">Avatar 4</MenuItem>
+                      <MenuItem value="/images/Avatar5.png">Avatar 5</MenuItem>
+                      <MenuItem value="/images/Avatar6.png">Avatar 6</MenuItem>
                     </Select>
                   </FormControl>
                 </Box>

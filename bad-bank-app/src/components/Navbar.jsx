@@ -29,7 +29,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <Link to="/home" className="navbar-brand">
-            Bad Bank
+            Home
           </Link>
           <button
             className="navbar-toggler"
@@ -44,7 +44,14 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item">
+              {loggedInUser ? (
+                <>
+                  <li className="nav-item">
+                    <Link to="/myAccount" className="nav-link">
+                      My Account
+                    </Link>
+                  </li>
+                  <li className="nav-item">
                 <Link to="/deposit" className="nav-link">
                   Deposit
                 </Link>
@@ -56,16 +63,9 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link to="/allData" className="nav-link">
-                  All Data
+                  Confidential Data
                 </Link>
               </li>
-              {loggedInUser ? (
-                <>
-                  <li className="nav-item">
-                    <Link to="/myAccount" className="nav-link">
-                      My Account
-                    </Link>
-                  </li>
                   <li className="nav-item">
                     <span onClick={handleLogout} className="nav-link clickable">
                       Logout

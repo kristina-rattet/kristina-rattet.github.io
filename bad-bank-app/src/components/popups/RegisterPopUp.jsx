@@ -134,7 +134,7 @@ const RegisterPopUp = ({ handleClose }) => {
           ) : (
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">Create Account</h5>
+                <h5 className="card-title">Create An Account</h5>
                 <hr />
                 <div>
                   <Box m={2}>
@@ -142,7 +142,7 @@ const RegisterPopUp = ({ handleClose }) => {
                   </Box>
                   <Box m={2}>
                     <FormControl className="custom-input-box">
-                      <InputLabel id="userPicLabel">Avatar</InputLabel>
+                      <InputLabel id="userPicLabel">Choose Your Avatar</InputLabel>
                       <Select
                         labelId="userPicLabel"
                         id="userPic"
@@ -241,7 +241,7 @@ const RegisterPopUp = ({ handleClose }) => {
                       type="submit"
                       onClick={handleClosePopUp}
                     >
-                      Cancel
+                      Close
                     </Button>
 
                     <Button
@@ -250,7 +250,7 @@ const RegisterPopUp = ({ handleClose }) => {
                       onClick={formik.handleSubmit}
                       disabled={isDisabled}
                     >
-                      Register
+                      Create Account
                     </Button>
                   </Box>
                 </div>

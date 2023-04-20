@@ -18,13 +18,12 @@ const Home = () => {
     <>
       <div className="card-container">
         <div className="card" style={customStyles}>
-          <h5 className="card-title">Bad Bank</h5>
-          <img src="/images/money.jpg" className="card-img-top" alt="..." />
+          <h5 className="card-title">Welcome to Bad Bank</h5>
+          <img src="/images/money.png" className="card-img-top" alt="..." />
           <div className="card-body">
             <p className="card-text">
-              Welcome! to the safest bank in the virtual world. We promise you
-              that we will
-              <span className="bad-policy-practice">not</span> secure your data.
+              At Bad Bank, we pride ourselves on being the best at bad banking. Let us eliminate the hassle that comes with managing your money by letting it become someone else's problem.
+              <br></br><span className="bad-policy-practice">If you feel you have no interest, you are not a loan.</span>
             </p>
           </div>
         </div>
@@ -32,7 +31,7 @@ const Home = () => {
       <br />
       <div className="card-container">
         <button onClick={toggleAboutPopUp} className="btn btn-primary">
-          Learn About Bad Bank
+          Learn About Project Bad Bank
         </button>
       </div>
 

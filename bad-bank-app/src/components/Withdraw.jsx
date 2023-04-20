@@ -31,7 +31,7 @@ const Withdraw = () => {
     onSubmit: () => {
       //Verify if there's logged in user
       if (!loggedInUser) {
-        toast.error("Please login to make a successful transaction");
+        toast.error("You must be logged in to complete a transaction");
         return;
       }
 
@@ -88,8 +88,8 @@ const Withdraw = () => {
     <>
       {!loggedInUser ? (
         <>
-          <h3>Withdraw</h3>
-          <p>Please login to your account</p>
+          <h3>Make a Withdrawal</h3>
+          <p>You must be logged in to complete a transaction</p>
         </>
       ) : (
         <div className="card" style={customStyles}>
@@ -125,7 +125,7 @@ const Withdraw = () => {
                   onClick={formik.handleSubmit}
                   disabled={isDisabled}
                 >
-                  Withdraw
+                  Withdraw Now
                 </Button>
               </Box>
             </div>
